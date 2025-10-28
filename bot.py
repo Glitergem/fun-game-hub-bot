@@ -5,12 +5,12 @@ import asyncio
 import os
 
 # --- CONFIGURATION ---
-TOKEN = os.getenv("BOT_TOKEN")  # Render will store your token securely
+TOKEN = os.getenv("BOT_TOKEN")
 
 # --- SETUP ---
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=TOKEN)
-dp = Dispatcher()  # No bot argument needed
+dp = Dispatcher()
 
 # --- START COMMAND ---
 @dp.message(Command('start'))
