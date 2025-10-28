@@ -10,7 +10,7 @@ TOKEN = os.getenv("BOT_TOKEN")  # Render will store your token securely
 # --- SETUP ---
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=TOKEN)
-dp = Dispatcher(bot)
+dp = Dispatcher()  # No bot argument needed
 
 # --- START COMMAND ---
 @dp.message(Command('start'))
